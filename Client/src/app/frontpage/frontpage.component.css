@@ -1,0 +1,57 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color:white;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color:white;
+  }
+  
+  button {
+    display: block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .registerbtn {
+    background-color: #e91e63;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .loginbtn {
+    background-color: #2196f3;
+    color: #fff;
+  }
+  
+  button:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+ .main{
+    background-image: url('/assets/4436008_93189.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  

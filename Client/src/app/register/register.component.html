@@ -1,0 +1,46 @@
+<header>
+  <div class="header-left">
+    <span class="material-symbols-outlined">
+      chart_data
+    </span>
+     <h1>SalesForecast360</h1>
+    </div>
+  <div class="header-right">
+    <button (click)="register()">Login</button>
+  </div>
+</header>
+<mat-card class="block">
+  <mat-card-header>
+      <h2>User Registration</h2>
+  </mat-card-header>
+  <mat-card-content class="card">
+      <form class="example-form" [formGroup]="registerForm" (ngSubmit)="proceedRegister()">
+          <mat-form-field class="example-full-width">
+            <mat-label>Username</mat-label>
+            <input matInput formControlName="id" >
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+              <mat-label>Name</mat-label>
+              <input matInput formControlName="name" >
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Password</mat-label>
+              <input  matInput type="password" formControlName="password" >
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email" >
+            </mat-form-field>
+            <div class="radio">
+            <mat-radio-group formControlName="gender" aria-label="Select an option">
+              <mat-radio-button value="male">Male</mat-radio-button>
+              <mat-radio-button value="female">Female</mat-radio-button>
+            </mat-radio-group>
+          </div>
+            <div class="btn">
+              <button mat-raised-button color="primary">Submit</button>
+            </div>
+        </form>
+  </mat-card-content>
+</mat-card>
+

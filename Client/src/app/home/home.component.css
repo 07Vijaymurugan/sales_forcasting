@@ -1,0 +1,158 @@
+/* Target the heading element */
+.head{
+  background-color: #3e8e41;
+}
+.upld{
+ display:block;
+ border-style: groove;
+ padding: 12px 9px;
+ margin: 8px 0;
+ border: 1px solid black;
+ width: 50%;
+ }
+ .user{
+ display:block;
+ border-style: groove;
+ padding: 12px 9px;
+ margin: 8px 0;
+ border: 1px solid black;
+ width: 50%;
+ }
+.whole{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Set the background color of the component */
+.home-component {
+    background-color:#01172f;
+    padding:35px;
+    border-radius: 30px;
+    width:40%;
+    margin:auto;
+
+  }
+
+  
+  /* Style the file upload container */
+  .file-upload-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 20px;
+
+
+  }
+  
+  /* Style the file upload label */
+  .file-upload-label {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the file upload input */
+  .file-upload-input {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the file upload button */
+  .file-upload-button {
+    background-color: #01172f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style the file upload button on hover */
+  .file-upload-button:hover {
+    background-color: #1A237E;
+  }
+
+  .success-snackbar {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .error-snackbar {
+    background-color: #f44336;
+    color: #fff;
+  }
+
+  .mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+  }
+
+  .btn{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    gap:50px
+  }
+  .downloadbtn{
+    background-color: #01172f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .downloadbtn:hover {
+    background-color: #1A237E;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #01172f;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .header-left h1 {
+    margin: 0;
+    font-size: 20px;
+
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right p {
+    margin: 0 20px 0 0;
+    font-size: 18px;
+  }
+  
+  .header-right button {
+    background-color: #fff;
+    border: none;
+    color: #333;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .header-right button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  .header-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }

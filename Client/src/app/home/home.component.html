@@ -1,0 +1,50 @@
+<header>
+  <div class="header-left">
+    <span class="material-symbols-outlined">
+      chart_data
+    </span>
+     <h1>SalesForecast360</h1>
+    </div>
+  <div class="header-right">
+    <p>{{username}}</p>
+    <button (click)="logout()">Logout</button>
+  </div>
+</header>
+<div class ="whole">
+<div class="home-component">
+
+    <div class="file-upload-container">
+      <h4>Upload a CSV file</h4>
+      <input class="upld" type="file" (change)="onFileSelected($event)">
+      <div class="dropdown">
+      <h4>Choose a Product</h4>
+      <mat-form-field appearance="fill">
+        <mat-label>Product</mat-label>
+        <mat-select #product>
+          <mat-option *ngFor="let attr of Attributes" [value]="attr.value">
+            {{attr.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      </div>
+    <div class="radio">
+      <h4>Choose an Interval</h4>
+      <mat-radio-group [formControl]="formcontrol" aria-label="Select an option">
+        <mat-radio-button value="daily">Daily</mat-radio-button>
+        <mat-radio-button value="weekly">Weekly</mat-radio-button>
+        <mat-radio-button value="monthly">Monthly</mat-radio-button>
+        <mat-radio-button value="yearly">Yearly</mat-radio-button>
+      </mat-radio-group>
+    </div>
+      <h4>Enter the Period</h4>
+      <mat-form-field class="field">
+          <mat-label>Period</mat-label>
+          <input type="number" min="0" [defaultValue]="0" matInput [formControl]="periodcontrol">
+        </mat-form-field>
+      <div class="btn">
+      <button class="file-upload-button" (click)=" onSubmit(product.value)">Upload</button>
+      <button class="downloadbtn" (click)="downloadcsv()">Download</button>
+    </div>
+</div>
+</div>
+  
